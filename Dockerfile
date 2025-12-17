@@ -16,7 +16,7 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git perl
 COPY . .
-RUN sh ./scripts/preinstall.sh
+# RUN sh ./scripts/preinstall.sh
 RUN npm install
 ARG S3_ACCESS_KEY_ID
 ARG S3_SECRET_ACCESS_KEY
