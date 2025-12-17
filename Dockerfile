@@ -17,11 +17,7 @@ FROM base AS builder
 RUN apk update && apk add --no-cache git perl
 COPY . .
 RUN sh ./scripts/preinstall.sh
-RUN corepack enable
-RUN corepack prepare pnpm@8.15.5 --activate
-# Install all dependencies
-RUN pnpm install
-
+RUN npm install
 ARG S3_ACCESS_KEY_ID
 ARG S3_SECRET_ACCESS_KEY
 ARG GIT_TOKEN
