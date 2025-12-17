@@ -18,7 +18,7 @@ RUN apk update && apk add --no-cache git perl
 COPY . .
 RUN sh ./scripts/preinstall.sh
 # Install all dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 
 ARG S3_ACCESS_KEY_ID
 ARG S3_SECRET_ACCESS_KEY
