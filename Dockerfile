@@ -17,6 +17,8 @@ FROM base AS builder
 RUN apk update && apk add --no-cache git perl
 COPY . .
 RUN sh ./scripts/preinstall.sh
+RUN corepack enable
+RUN corepack prepare pnpm@8.15.5 --activate
 # Install all dependencies
 RUN pnpm install
 
