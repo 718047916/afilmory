@@ -168,4 +168,4 @@ Attribution Network License (ANL) v1.0 © 2025 Afilmory Team. See [LICENSE](LICE
 
 ---
 
-If this project helps you, please give it a ⭐️ Star for support!
+If this project helps you, please give it a ⭐️ Star for support!！
